@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mubashar/ontologies/2022/2/BSecurityOnt.owl#"
+     xml:base="http://www.semanticweb.org/mubashar/ontologies/2022/2/BSecurityOnt.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:ULRO="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mubashar Iqbal (mubashar.iqbal@ut.ee) and Raimundas Matulevičius (rma@ut.ee)</dc:creator>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper level reference ontology for security risk management.</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper-level reference ontology as a foundation ontology to encode information security concepts following the fundamental constructs of security risk management.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper Level Reference Ontology (ULRO)</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines who created this ontology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#&apos;Dublin_core&apos;"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:creator</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/isReferencedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isReferencedBy">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property indicates the source from which the knowledge is retrieved for a particular concept.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#&apos;Dublin_core&apos;"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:isReferencedBy</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines the title of ontology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#&apos;Dublin_core&apos;"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:title</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#characteristicOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#characteristicOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vulnerability is a characteristic of a one or more system assets that exposes weakness.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characteristicOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#constraintOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#constraintOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#hasConstraint"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security criteria is a constraint of business assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constraintOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#exploits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#exploits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat exploits vulnerabilities in the system.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exploits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#hasConstraint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#hasConstraint">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of constraintOf where security criteria is a constraint of business assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasConstraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#mitigates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#mitigates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Countermeasure"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A countermeasure mitigates one or more vulnerabilities associated to a particular threat.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitigates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#negates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#negates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability negates the defined security criteria of business assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#supports -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#supports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A system asset supports one or more business assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#targets -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#targets">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat targets one or more system assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">targets</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Authors -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Authors">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines the authors of the book, book chapter, or research paper.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Authors</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#DOI -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#DOI">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Digital object identifier to uniquely identify a book, book chapter, or research paper.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOI</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Link -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Link">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines the link of the source if it is a web article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Link</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Pages -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Pages">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines the number of pages in the book, book chapter, or research paper.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pages</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Publisher">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines who published the book, book chapter, or reserach paper.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Publisher</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Title">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines the title of the book, book chapter, or research paper.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Type">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines the type, for example, is it a book, book chapter, research paper, or web article.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Year -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Year">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It defines in which year the book, book chapter, or research paper is published.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Year</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Asset">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset are valuable and plays a role accomplishing the organization’s objectives. Assets are classified as system and business assets.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Availability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Availability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The information and services are available to authorized users when needed.</rdfs:comment>
+        <rdfs:label>Availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Asset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#hasConstraint"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business assets describe the information, processes, capabilities and skills essential to the business and its core mission.</rdfs:comment>
+        <rdfs:label>BusinessAsset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Confidentiality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Confidentiality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Confidentiality means that the data is only available to only authorized users.</rdfs:comment>
+        <rdfs:label>Confidentiality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Countermeasure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Countermeasure">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#mitigates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Countermeasures are controls to improve the security of the system. Countermeasure can be processes, policies, devices, practices or other actions or components of the information system and its organisation that act to reduce risks.</rdfs:comment>
+        <rdfs:label>Countermeasure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Integrity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Integrity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrity refers to the certainty that the data is not tampered with during or after the submission.</rdfs:comment>
+        <rdfs:label>Integrity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#constraintOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security criteria is a constraint on business assets and characterize a security need which are expressed as confidentiality, integrity and availability of business assets.</rdfs:comment>
+        <rdfs:label>SecurityCriteria</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Asset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#supports"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#BusinessAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systems assets are the component or part of an information system, valuable to the organization since it supports business assets.</rdfs:comment>
+        <rdfs:label>SystemAsset</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Threat">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#exploits"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#targets"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat is an incident initiated by a threat agent using an attack method to target one or more IS assets by exploiting their vulnerabilities.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Threat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Vulnerability">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SystemAsset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#negates"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#SecurityCriteria"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vulnerability is the characteristic of an IS asset or group of IS assets that exposes a weakness or flaw in terms of security.</rdfs:comment>
+        <rdfs:label>Vulnerability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Dubois2010">
+        <ULRO:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Éric Dubois, Patrick Heymans, Nicolas Mayer, Raimundas Matulevičius</ULRO:Authors>
+        <ULRO:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-642-12544-7_16</ULRO:DOI>
+        <ULRO:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">289-306</ULRO:Pages>
+        <ULRO:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Berlin Heidelberg</ULRO:Publisher>
+        <ULRO:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</ULRO:Title>
+        <ULRO:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book chapter</ULRO:Type>
+        <ULRO:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</ULRO:Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#Matulevicius2017">
+        <ULRO:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raimundas Matulevičius</ULRO:Authors>
+        <ULRO:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-319-61717-6</ULRO:DOI>
+        <ULRO:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">218</ULRO:Pages>
+        <ULRO:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer International Publishing</ULRO:Publisher>
+        <ULRO:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</ULRO:Title>
+        <ULRO:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</ULRO:Type>
+        <ULRO:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2017</ULRO:Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#&apos;Dublin_core&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mubashar/ontologies/2022/2/ULRO.owl#&apos;Dublin_core&apos;">
+        <ULRO:Link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dublincore.org/specifications/dublin-core/dcmi-terms</ULRO:Link>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specification of all metadata terms maintained by the Dublin Core Metadata Initiative.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dublin core</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
