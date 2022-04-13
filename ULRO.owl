@@ -33,7 +33,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines who created this ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#&apos;Dublin_core&apos;"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:creator</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -44,7 +44,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isReferencedBy">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property indicates the source from which the knowledge is retrieved for a particular concept.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#&apos;Dublin_core&apos;"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:isReferencedBy</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -55,7 +55,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines the title of ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#&apos;Dublin_core&apos;"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:title</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -470,9 +470,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#&apos;Dublin_core&apos; -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Dublin_core -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#&apos;Dublin_core&apos;">
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core">
         <Link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dublincore.org/specifications/dublin-core/dcmi-terms</Link>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specification of all metadata terms maintained by the Dublin Core Metadata Initiative.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dublin core</rdfs:label>
