@@ -7,13 +7,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:ULRO="https://mmisw.org/ont/~mubashar/ULRO#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://mmisw.org/ont/~mubashar/ULRO">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ULRO-instantiation="https://mmisw.org/ont/~mubashar/ULRO-instantiation#">
+    <owl:Ontology rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation">
         <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mubashar Iqbal (mubashar.iqbal@ut.ee) and Raimundas Matulevičius (rma@ut.ee)</dc:creator>
-        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper level reference ontology for security risk management.</dc:title>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper-level reference ontology as a foundation ontology to encode information security concepts following the fundamental constructs of security risk management.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper Level Reference Ontology (ULRO)</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.0</owl:versionInfo>
+        <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instantiation of upper level reference ontology for security risk management of smart healthcare system.</dc:title>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">We use upper-level reference ontology as a foundation ontology to encode security risk management concepts of smart healthcare system by following the fundamental constructs of security risk management.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper Level Reference Ontology (ULRO) Instantiation</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Upper level reference ontology: https://mmisw.org/ont/~mubashar/ULRO</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -33,7 +35,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines who created this ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:creator</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -44,7 +46,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/isReferencedBy">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property indicates the source from which the knowledge is retrieved for a particular concept.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:isReferencedBy</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -55,7 +57,7 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title">
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This annotation property defines the title of ontology.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core"/>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dc:title</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
     </owl:AnnotationProperty>
@@ -73,200 +75,200 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#characteristicOf -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasCharacteristic"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasCharacteristic"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vulnerability is a characteristic of a one or more system assets that exposes weakness.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">characteristicOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#constraintOf -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#constraintOf -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#constraintOf">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#constraintOf">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security criteria is a constraint of business assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">constraintOf</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#exploits -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#exploits -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#exploits">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#isExploitedBy"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#exploits">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isExploitedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat exploits vulnerabilities in the system.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">exploits</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#harms -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#harms -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#harms">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#isHarmedBy"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#harms">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isHarmedBy"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Asset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vulnerability harms an asset.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">harms</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#hasCharacteristic -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasCharacteristic -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#hasCharacteristic">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasCharacteristic">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of characteristicOf where one or more system assets has a characteristic vulnerability that exposes weakness of system assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasCharacteristic</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#hasConstraint -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of constraintOf where security criteria is a constraint of business assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hasConstraint</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isExploitedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isExploitedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isExploitedBy">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isExploitedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of exploits where vulnerability in the system is exploited by threat.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isExploitedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isHarmedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isHarmedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isHarmedBy">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isHarmedBy">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Asset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of harms where an asset is harmed by a vulnerability.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isHarmedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isMitigatedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isMitigatedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isMitigatedBy">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#mitigates"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isMitigatedBy">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of mitigates where  one or more vulnerabilities associated to a particular threat are mitigated by countermeasure.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isMitigatedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isNegatedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isNegatedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isNegatedBy">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#negates"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isNegatedBy">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of negates where security criteria of business assets is negated by vulnerability.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isNegatedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isSupportedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isSupportedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isSupportedBy">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isSupportedBy">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of supports where one or more business assets is supported by system asset.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isSupportedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#isTargetedBy -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#isTargetedBy -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#isTargetedBy">
-        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isTargetedBy">
+        <owl:inverseOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is an inverse relation of targets where one or more system assets are targeted by threat.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isTargetedBy</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#mitigates -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#mitigates">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A countermeasure mitigates one or more vulnerabilities associated to a particular threat.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitigates</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#negates -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#negates">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vulnerability negates the defined security criteria of business assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">negates</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#supports -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#supports">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A system asset supports one or more business assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">supports</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#targets -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets -->
 
-    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#targets">
+    <owl:ObjectProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+        <rdfs:domain rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <rdfs:range rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat targets one or more system assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">targets</rdfs:label>
     </owl:ObjectProperty>
@@ -284,9 +286,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Authors -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Authors -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Authors">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Authors">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -296,9 +298,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#DOI -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#DOI -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#DOI">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DOI">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -308,9 +310,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Link -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Link -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Link">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Link">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -320,9 +322,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Pages -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Pages -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Pages">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Pages">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -332,9 +334,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Publisher -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Publisher -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Publisher">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Publisher">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -344,9 +346,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Title -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Title -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Title">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Title">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -356,9 +358,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Type -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Type -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Type">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Type">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -368,9 +370,9 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Year -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Year -->
 
-    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Year">
+    <owl:DatatypeProperty rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Year">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
@@ -391,46 +393,46 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Asset -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Asset">
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#isHarmedBy"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#isHarmedBy"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset are valuable and plays a role accomplishing the organization’s objectives. Assets are classified as system and business assets.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Availability -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Availability -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Availability">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Availability">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The information and services are available to authorized users when needed.</rdfs:comment>
         <rdfs:label>Availability</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#BloodPressureMeasurement -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurement -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#BloodPressureMeasurement">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#HealthcareData"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurement">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#HealthcareData"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood pressure measurement that is collected by using the smart devices.</rdfs:comment>
@@ -439,120 +441,120 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Asset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Business assets describe the information, processes, capabilities and skills essential to the business and its core mission.</rdfs:comment>
         <rdfs:label>BusinessAsset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#CheckSourceOfNodeConnection -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#CheckSourceOfNodeConnection -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#CheckSourceOfNodeConnection">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#CheckSourceOfNodeConnection">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateNodeConnection"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Validate the source of node connection and monitor nodes’ behaviour over a certain period of time.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CheckSourceOfNodeConnection</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Confidentiality -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Confidentiality -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Confidentiality">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Confidentiality">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The data is only available to authorized users.</rdfs:comment>
         <rdfs:label>Confidentiality</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Consensus -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Consensus -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Consensus">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Consensus">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#mitigates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ErrorProneDataValidation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ErrorProneDataValidation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Lin2018"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Lin2018"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consensus is fault-tolerant mechanism used in blockchains to define the true state of the ledger.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consensus</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Countermeasure -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure">
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#mitigates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Countermeasures are controls to improve the security of the system. Countermeasure can be processes, policies, devices, practices or other actions or components of the information system and its organisation that act to reduce risks.</rdfs:comment>
         <rdfs:label>Countermeasure</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#DataOperation -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataOperation -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#DataOperation">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataOperation">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BloodPressureMeasurement"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data operation is the activity performed in the system. For example, send data, view data, store data, etc.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataOperation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#DataTampering -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataTampering -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#DataTampering">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataTampering">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#exploits"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ErrorProneDataValidation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#exploits"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ErrorProneDataValidation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#DataOperation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataOperation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Li2018a"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Li2018a"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data tampering involves the malicious modification of data by an unauthorized user.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataTampering</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitigated</rdfs:seeAlso>
@@ -560,255 +562,253 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#DecentralizedDataValidation -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#DecentralizedDataValidation -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#DecentralizedDataValidation">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Consensus"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Lin2018"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DecentralizedDataValidation">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Consensus"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Lin2018"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the consensus mechanism, validation nodes are responsible for verifying the transactions according to the defined data validation rules.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecentralizedDataValidation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#ErrorProneDataValidation -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#ErrorProneDataValidation -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#ErrorProneDataValidation">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ErrorProneDataValidation">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#DataOperation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataOperation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#negates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Li2018a"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Li2018a"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Failure to adequately validate and verify data at the application’s input and output points.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ErrorProneDataValidation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#HealthcareData -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#HealthcareData -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#HealthcareData">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#HealthcareData">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healthcare data includes patient medical data, medical reports, drugs prescription, etc.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HealthcareData</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Integrity -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Integrity">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Integrity refers to the certainty that the data is not tampered with during or after the submission.</rdfs:comment>
         <rdfs:label>Integrity</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#MonitorNodeBehavior -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#MonitorNodeBehavior -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#MonitorNodeBehavior">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#MonitorNodeBehavior">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#mitigates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NoProperAuthenticationOfNode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To find suspect nodes which are not performing the fair forwarding of blocks.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonitorNodeBehavior</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#NetworkJoiningFee -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkJoiningFee -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#NetworkJoiningFee">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkJoiningFee">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateNodeConnection"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge some network joining fee when new node join the network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkJoiningFee</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#NetworkReputation -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkReputation -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#NetworkReputation">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkReputation">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reputation is based on the nodes reputation in the peer-to-peer distributed network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkReputation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#NoProperAuthenticationOfNode -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NoProperAuthenticationOfNode">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NetworkReputation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkReputation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Node"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Node"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#P2PNetwork"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#P2PNetwork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Transaction"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Transaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#negates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The poor implementation of node authentication when joining the blockchain network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoProperAuthenticationOfNode</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Node -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Node -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Node">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Node">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Node is a part of blockchain peer-to-peer network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Node</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#P2PNetwork -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#P2PNetwork -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#P2PNetwork">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#P2PNetwork">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peer-to-peer based distributed network where blockchain operates.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P2PNetwork</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#PatientData -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#PatientData -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#PatientData">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#PatientData">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient personal details required for healthcare.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PatientData</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria">
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#constraintOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#constraintOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Security criteria is a constraint on business assets and characterize a security need which are expressed as confidentiality, integrity and availability of business assets.</rdfs:comment>
         <rdfs:label>SecurityCriteria</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#SybilAttack -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#SybilAttack -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#SybilAttack">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SybilAttack">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#exploits"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#exploits"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NoProperAuthenticationOfNode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NetworkReputation"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NetworkReputation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Node"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Node"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#P2PNetwork"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#P2PNetwork"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Transaction"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Transaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sybil attack is well-known in the context of P2P networks, where the attacker can forge or create numerous fake identities to gain a considerable influence on the network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SybilAttack</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appeared</rdfs:seeAlso>
@@ -816,127 +816,127 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#SystemAsset -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Asset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Asset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Threat"/>
-        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat"/>
+        <owl:disjointWith rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systems assets are the component or part of an information system, valuable to the organization since it supports business assets.</rdfs:comment>
         <rdfs:label>SystemAsset</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Threat -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Threat">
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Threat">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#exploits"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#exploits"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#targets"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A threat is an incident initiated by a threat agent using an attack method to target one or more IS assets by exploiting their vulnerabilities.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Threat</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Transaction -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Transaction -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Transaction">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Transaction">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#supports"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transaction on blockchain against each performed action.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transaction</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#TransactionVerification">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#hasConstraint"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#hasConstraint"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of transaction verification before saving transaction on immutable ledger.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TransactionVerification</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#ValidateIPAddress -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateIPAddress -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#ValidateIPAddress">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateIPAddress">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateNodeConnection"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To build whitelist of IP addresses and then validate from it the new joining node.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ValidateIPAddress</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateNodeConnection -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection">
-        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Countermeasure"/>
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ValidateNodeConnection">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Countermeasure"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#mitigates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#mitigates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#NoProperAuthenticationOfNode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To perform node authentication before joining the network, other nodes already on the network can check the list of &quot;known-good&quot; identities to validate upcoming node.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ValidateNodeConnection</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Vulnerability -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability -->
 
-    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Vulnerability">
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#characteristicOf"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SystemAsset"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#negates"/>
-                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#SecurityCriteria"/>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#negates"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SecurityCriteria"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010"/>
-        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A vulnerability is the characteristic of an IS asset or group of IS assets that exposes a weakness or flaw in terms of security.</rdfs:comment>
         <rdfs:label>Vulnerability</rdfs:label>
     </owl:Class>
@@ -954,116 +954,116 @@
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Dublin_core -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Dublin_core">
-        <Link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dublincore.org/specifications/dublin-core/dcmi-terms</Link>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core">
+        <ULRO-instantiation:Link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.dublincore.org/specifications/dublin-core/dcmi-terms</ULRO-instantiation:Link>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specification of all metadata terms maintained by the Dublin Core Metadata Initiative.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dublin core</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Dubois2010 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Dubois2010">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Éric Dubois, Patrick Heymans, Nicolas Mayer, Raimundas Matulevičius</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-642-12544-7_16</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">289-306</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Berlin Heidelberg</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book chapter</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dubois2010">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Éric Dubois, Patrick Heymans, Nicolas Mayer, Raimundas Matulevičius</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-642-12544-7_16</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">289-306</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer Berlin Heidelberg</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book chapter</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daisuke Ichikawa, Makiko Kashiyama, Taro Ueno</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.2196/mhealth.7938</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e111</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JMIR Mhealth Uhealth</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daisuke Ichikawa, Makiko Kashiyama, Taro Ueno</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.2196/mhealth.7938</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e111</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JMIR Mhealth Uhealth</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Li2018a -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Li2018a -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Li2018a">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hongyu Li, Liehuang Zhu, Meng Shen, Feng Gao, Xiaoling Tao, Sheng Liu</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/s10916-018-0997-3</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141 (1-13)</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of Medical Systems</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Li2018a">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hongyu Li, Liehuang Zhu, Meng Shen, Feng Gao, Xiaoling Tao, Sheng Liu</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/s10916-018-0997-3</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141 (1-13)</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of Medical Systems</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Lin2018 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Lin2018 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Lin2018">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chao Lin, Debiao He, Xinyi Huang, Kim-Kwang RaymondChoo, Athanasios V.Vasilakosd</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.jnca.2018.05.005</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42-52</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science Direct Journal of Network and Computer Applications</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Lin2018">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chao Lin, Debiao He, Xinyi Huang, Kim-Kwang RaymondChoo, Athanasios V.Vasilakosd</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.jnca.2018.05.005</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42-52</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science Direct Journal of Network and Computer Applications</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raimundas Matulevičius</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-319-61717-6</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">218</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer International Publishing</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Matulevicius2017">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raimundas Matulevičius</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/978-3-319-61717-6</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">218</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Springer International Publishing</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Pradhan2019 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Srikanta Pradhan, Somanath Tripathy, Sukumar Nandi</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ANTS.2018.8710078</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Pradhan2019">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Srikanta Pradhan, Somanath Tripathy, Sukumar Nandi</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ANTS.2018.8710078</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- https://mmisw.org/ont/~mubashar/ULRO#Swathi2019 -->
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019 -->
 
-    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019">
-        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P Swathi, Chirag Modi, Dhiren Patel</Authors>
-        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ICCCNT45670.2019.8944507</DOI>
-        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</Pages>
-        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT)</Publisher>
-        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</Title>
-        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</Type>
-        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</Year>
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019">
+        <ULRO-instantiation:Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P Swathi, Chirag Modi, Dhiren Patel</ULRO-instantiation:Authors>
+        <ULRO-instantiation:DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ICCCNT45670.2019.8944507</ULRO-instantiation:DOI>
+        <ULRO-instantiation:Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</ULRO-instantiation:Pages>
+        <ULRO-instantiation:Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT)</ULRO-instantiation:Publisher>
+        <ULRO-instantiation:Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</ULRO-instantiation:Title>
+        <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</ULRO-instantiation:Type>
+        <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
