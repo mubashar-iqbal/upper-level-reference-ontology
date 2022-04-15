@@ -11,7 +11,7 @@
 
 <img src="urlo_classes.png" width="350" alt="ULRO classes and description logic" title="ULRO classes and description logic"/>
 
-## ULRO Protégé-based Classifications
+## ULRO's Protégé-based Classifications
 <img src="ulro_classifications.png" width="350" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
 
 ## Protégé Ontology Editor
