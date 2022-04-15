@@ -5,7 +5,7 @@ We instantiated the [ULRO](https://github.com/mubashar-iqbal/upper-level-referen
 ## SPARQL queries
 The SPARQL queries can be used to retrieve information from an ULRO instantiation ontology. The following header code will remain the same for all the queries listed in this section.
 
-```json
+```sql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -29,9 +29,9 @@ SELECT DISTINCT ?System_asset ?Business_asset WHERE {
 The following SPARQL query gets the business assets that have the security criteria constraint.
 
 ```sql
-SELECT DISTINCT ?Business_Asset ?Constraint WHERE {
-    ?Business_Asset rdfs:subClassOf ULRO_INST:BusinessAsset .
-    ?Business_Asset rdfs:subClassOf ?Constraint .
+SELECT DISTINCT ?Business_asset ?Constraint WHERE {
+    ?Business_asset rdfs:subClassOf ULRO_INST:BusinessAsset .
+    ?Business_asset rdfs:subClassOf ?Constraint .
     ?Constraint owl:onProperty ULRO_INST:hasConstraint .
     { ?Constraint owl:someValuesFrom ULRO_INST:Confidentiality . }
     UNION
@@ -79,5 +79,16 @@ SELECT DISTINCT ?Countermeasure ?Vulnerability WHERE {
 }
 ```
 
-## Protégé-based Classifications of ULRO instantiation
+## Classification of ULRO instantiation
+Protégé-based classification illustrates the class hierarchies along with their defined relationships.
+
 <img src="ULRO-instantiation.png" width="350" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
+
+### Class hierarchies
+
+ULRO instantiation "is-a" based taxonomical structure illustrates the class hierarchies.
+
+<img src="classes_hierarchy.png" width="350" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
+
+## How to use?
+Download [Protégé](https://protege.stanford.edu) editor. Load/import [ULRO instantiation](https://mmisw.org/ont/~mubashar/ULRO-instantiation) in Protégé and navigate to the *Entities* tab. You can also execute the above-listed SPARQL queries to explore the encoded security risk management concepts.
