@@ -433,7 +433,6 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood pressure measurement that is collected by using the smart devices.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BloodPressureMeasurement</rdfs:label>
     </owl:Class>
@@ -464,6 +463,7 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#CheckSourceOfNodeConnection">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Validate the source of node connection and monitor nodes’ behaviour over a certain period of time.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CheckSourceOfNodeConnection</rdfs:label>
     </owl:Class>
     
@@ -491,6 +491,8 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ErrorProneDataValidation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Lin2018"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consensus is fault-tolerant mechanism used in blockchains to define the true state of the ledger.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Consensus</rdfs:label>
     </owl:Class>
     
@@ -526,6 +528,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BloodPressureMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data operation is the activity performed in the system. For example, send data, view data, store data, etc.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataOperation</rdfs:label>
     </owl:Class>
@@ -548,6 +551,8 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#DataOperation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Li2018a"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data tampering involves the malicious modification of data by an unauthorized user.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataTampering</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitigated</rdfs:seeAlso>
@@ -559,6 +564,8 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#DecentralizedDataValidation">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Consensus"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Lin2018"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">During the consensus mechanism, validation nodes are responsible for verifying the transactions according to the defined data validation rules.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DecentralizedDataValidation</rdfs:label>
     </owl:Class>
     
@@ -580,9 +587,10 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Li2018a"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Failure to adequately validate and verify data at the application’s input and output points.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ErrorProneDataValidation</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitigated</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -591,6 +599,7 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#HealthcareData">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#BusinessAsset"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Healthcare data includes patient medical data, medical reports, drugs prescription, etc.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HealthcareData</rdfs:label>
     </owl:Class>
@@ -619,6 +628,8 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To find suspect nodes which are not performing the fair forwarding of blocks.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MonitorNodeBehavior</rdfs:label>
     </owl:Class>
     
@@ -628,6 +639,7 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#NetworkJoiningFee">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge some network joining fee when new node join the network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkJoiningFee</rdfs:label>
     </owl:Class>
     
@@ -643,6 +655,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reputation is based on the nodes reputation in the peer-to-peer distributed network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NetworkReputation</rdfs:label>
     </owl:Class>
@@ -683,9 +696,10 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The poor implementation of node authentication when joining the blockchain network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NoProperAuthenticationOfNode</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appeared</rdfs:seeAlso>
     </owl:Class>
     
 
@@ -700,6 +714,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Node is a part of blockchain peer-to-peer network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Node</rdfs:label>
     </owl:Class>
@@ -716,6 +731,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peer-to-peer based distributed network where blockchain operates.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P2PNetwork</rdfs:label>
     </owl:Class>
@@ -732,6 +748,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patient personal details required for healthcare.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PatientData</rdfs:label>
     </owl:Class>
@@ -790,6 +807,8 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Transaction"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019"/>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sybil attack is well-known in the context of P2P networks, where the attacker can forge or create numerous fake identities to gain a considerable influence on the network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SybilAttack</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appeared</rdfs:seeAlso>
@@ -850,6 +869,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#TransactionVerification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transaction on blockchain against each performed action.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Transaction</rdfs:label>
     </owl:Class>
@@ -866,6 +886,7 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Integrity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Process of transaction verification before saving transaction on immutable ledger.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TransactionVerification</rdfs:label>
     </owl:Class>
@@ -876,6 +897,7 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO#ValidateIPAddress">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#ValidateNodeConnection"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To build whitelist of IP addresses and then validate from it the new joining node.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ValidateIPAddress</rdfs:label>
     </owl:Class>
     
@@ -891,6 +913,8 @@
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#NoProperAuthenticationOfNode"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">To perform node authentication before joining the network, other nodes already on the network can check the list of &quot;known-good&quot; identities to validate upcoming node.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ValidateNodeConnection</rdfs:label>
     </owl:Class>
     
@@ -955,6 +979,51 @@
     
 
 
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017 -->
+
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Ichikawa2017">
+        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daisuke Ichikawa, Makiko Kashiyama, Taro Ueno</Authors>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.2196/mhealth.7938</DOI>
+        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">e111</Pages>
+        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JMIR Mhealth Uhealth</Publisher>
+        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</Title>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Li2018a -->
+
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Li2018a">
+        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hongyu Li, Liehuang Zhu, Meng Shen, Feng Gao, Xiaoling Tao, Sheng Liu</Authors>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1007/s10916-018-0997-3</DOI>
+        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">141 (1-13)</Pages>
+        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal of Medical Systems</Publisher>
+        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</Title>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Lin2018 -->
+
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Lin2018">
+        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chao Lin, Debiao He, Xinyi Huang, Kim-Kwang RaymondChoo, Athanasios V.Vasilakosd</Authors>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1016/j.jnca.2018.05.005</DOI>
+        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">42-52</Pages>
+        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science Direct Journal of Network and Computer Applications</Publisher>
+        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</Title>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</Type>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017 -->
 
     <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Matulevicius2017">
@@ -966,6 +1035,36 @@
         <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</Type>
         <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019 -->
+
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Pradhan2019">
+        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Srikanta Pradhan, Somanath Tripathy, Sukumar Nandi</Authors>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ANTS.2018.8710078</DOI>
+        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</Pages>
+        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE International Conference on Advanced Networks and Telecommunications Systems (ANTS)</Publisher>
+        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</Title>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</Type>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://mmisw.org/ont/~mubashar/ULRO#Swathi2019 -->
+
+    <owl:NamedIndividual rdf:about="https://mmisw.org/ont/~mubashar/ULRO#Swathi2019">
+        <Authors rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P Swathi, Chirag Modi, Dhiren Patel</Authors>
+        <DOI rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://doi.org/10.1109/ICCCNT45670.2019.8944507</DOI>
+        <Pages rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-6</Pages>
+        <Publisher rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEEE 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT)</Publisher>
+        <Title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</Title>
+        <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</Type>
+        <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</Year>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
