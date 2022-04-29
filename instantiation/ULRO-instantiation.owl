@@ -441,6 +441,22 @@
     
 
 
+    <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurementDevice -->
+
+    <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurementDevice">
+        <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#SystemAsset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#supports"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The smart healthcare device that patients use to measure bood pressure at home by themselves.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BloodPressureMeasurementDevice</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset -->
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BusinessAsset">
@@ -975,6 +991,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book chapter</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -990,6 +1007,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tamper-Resistant Mobile Health Using Blockchain Technology</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -1005,6 +1023,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain-Based Data Preservation System for Medical Data</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -1020,6 +1039,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Journal</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BSeIn: A blockchain-based secure mutual authentication with fine-grained access control system for industry 4.0</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -1035,6 +1055,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -1050,6 +1071,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2018</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blockchain based Security Framework for P2P Filesharing system</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -1065,6 +1087,7 @@
         <ULRO-instantiation:Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Conference</ULRO-instantiation:Type>
         <ULRO-instantiation:Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2019</ULRO-instantiation:Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
 </rdf:RDF>
 

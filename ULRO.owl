@@ -603,6 +603,7 @@
         <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book chapter</Type>
         <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2010</Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Systematic Approach to Define the Domain of Information System Security Risk Management</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
     
 
@@ -618,6 +619,7 @@
         <Type rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Book</Type>
         <Year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2017</Year>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fundamentals of Secure System Modelling</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference</rdfs:seeAlso>
     </owl:NamedIndividual>
 </rdf:RDF>
 
