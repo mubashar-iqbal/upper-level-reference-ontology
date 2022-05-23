@@ -82,13 +82,13 @@ SELECT DISTINCT ?Countermeasure ?Vulnerability WHERE {
 ## Classification of ULRO instantiation
 Protégé-based classification illustrates the class hierarchies along with their defined relationships.
 
-<img src="ULRO-instantiation.png" width="350" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
+<img src="ULRO-instantiation.png" width="450" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
 
 ### Class hierarchies
 
 ULRO instantiation "is-a" based taxonomical structure illustrates the class hierarchies.
 
-<img src="classes_hierarchy.png" width="350" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
+<img src="classes_hierarchy.png" width="450" alt="ULRO Protégé-based classifications" title="ULRO Protégé-based classifications"/>
 
 ## How to use?
 Download [Protégé](https://protege.stanford.edu) editor. Load/import [ULRO instantiation](https://mmisw.org/ont/~mubashar/ULRO-instantiation) in Protégé and navigate to the *Entities* tab. You can also execute the above-listed SPARQL queries to explore the encoded security risk management concepts.
