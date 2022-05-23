@@ -1,0 +1,706 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/admin/Dropbox/phd/journal articles/2/cpn/#HealthInsurance_Evaluation_NoHierachy.cpn
+Report generated: Mon May  2 13:00:13 2022
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  30547
+     Arcs:   94298
+     Secs:   28
+     Status: Full
+
+  Scc Graph
+     Nodes:  30547
+     Arcs:   94298
+     Secs:   1
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     Collect_data'BP_data_source 1
+                             1          1
+     Collect_data'BP_data_source 2
+                             1          1
+     Collect_data'BP_data_source 3
+                             1          1
+     Collect_data'BP_data_source 4
+                             1          1
+     Collect_data'BP_data_source 5
+                             1          1
+     Collect_data'BP_data_source 6
+                             1          1
+     Collect_data'Incorrect_data 1
+                             0          0
+     Collect_data'Incorrect_data 2
+                             0          0
+     Collect_data'Incorrect_data 3
+                             0          0
+     Collect_data'Incorrect_data 4
+                             0          0
+     Collect_data'Incorrect_data 5
+                             0          0
+     Collect_data'Incorrect_data 6
+                             0          0
+     Collect_data'Received_data 1
+                             1          0
+     Collect_data'Received_data 2
+                             1          0
+     Collect_data'Received_data 3
+                             1          0
+     Collect_data'Received_data 4
+                             1          0
+     Collect_data'Received_data 5
+                             1          0
+     Collect_data'Received_data 6
+                             1          0
+     Data_tampering'Data_tampered 1
+                             1          1
+     Data_tampering'Tampered_values 1
+                             1          1
+     Data_validation'Current_index 1
+                             1          0
+     Data_validation'Current_index 2
+                             1          0
+     Data_validation'Current_index 3
+                             1          0
+     Data_validation'Current_index_to_increment 1
+                             1          0
+     Data_validation'Current_index_to_increment 2
+                             1          0
+     Data_validation'Current_index_to_increment 3
+                             1          0
+     Data_validation'Current_node_index 1
+                             1          0
+     Data_validation'Current_node_index 2
+                             1          0
+     Data_validation'Current_node_index 3
+                             1          0
+     Data_validation'Data_for_consensus_result_calculation 1
+                             1          0
+     Data_validation'Data_for_consensus_result_calculation 2
+                             1          0
+     Data_validation'Data_for_consensus_result_calculation 3
+                             1          0
+     Data_validation'Node_index 1
+                             1          0
+     Data_validation'Node_index 2
+                             1          0
+     Data_validation'Node_index 3
+                             1          0
+     Data_validation'Total_invalid 1
+                             1          1
+     Data_validation'Total_invalid 2
+                             1          1
+     Data_validation'Total_invalid 3
+                             1          1
+     Data_validation'Total_valid 1
+                             1          1
+     Data_validation'Total_valid 2
+                             1          1
+     Data_validation'Total_valid 3
+                             1          1
+     Data_validation'data_to_check 1
+                             1          0
+     Data_validation'data_to_check 2
+                             1          0
+     Data_validation'data_to_check 3
+                             1          0
+     Data_validation'data_to_validate_by_node 1
+                             1          0
+     Data_validation'data_to_validate_by_node 2
+                             1          0
+     Data_validation'data_to_validate_by_node 3
+                             1          0
+     Data_validation'invalid_nodes 1
+                             1          0
+     Data_validation'invalid_nodes 2
+                             1          0
+     Data_validation'invalid_nodes 3
+                             1          0
+     Data_validation'node_consensus_result 1
+                             1          0
+     Data_validation'node_consensus_result 2
+                             1          0
+     Data_validation'node_consensus_result 3
+                             1          0
+     Data_validation'valid_nodes 1
+                             1          0
+     Data_validation'valid_nodes 2
+                             1          0
+     Data_validation'valid_nodes 3
+                             1          0
+     ExternalLayer'GP_end 1  1          0
+     ExternalLayer'GP_out 1  1          0
+     ExternalLayer'GP_start 1
+                             1          0
+     ExternalLayer'HP_data 1 1          0
+     ExternalLayer'HP_end 1  1          0
+     ExternalLayer'HP_out 1  1          0
+     ExternalLayer'HP_start 1
+                             1          0
+     ExternalLayer'Hospital_data 1
+                             1          0
+     ExternalLayer'IP_a 1    1          0
+     ExternalLayer'IP_b 1    1          0
+     ExternalLayer'IP_c 1    1          0
+     ExternalLayer'IP_d 1    1          0
+     ExternalLayer'IP_e 1    1          0
+     ExternalLayer'IP_f 1    1          0
+     ExternalLayer'Invalid_data 1
+                             0          0
+     ExternalLayer'P_end 1   1          0
+     ExternalLayer'P_out 1   1          0
+     ExternalLayer'P_start 1 1          0
+     ExternalLayer'Patient_data 1
+                             1          0
+     ExternalLayer'Uniqueue_end 1
+                             1          0
+     ExternalLayer'Valid_data 1
+                             1          0
+     ExternalLayer'Validation_result 1
+                             1          0
+     ExternalLayer'uniqueue_start 1
+                             1          0
+     Healthcare_professional_internall_process'Filtered_data 1
+                             1          0
+     Healthcare_professional_internall_process'HP_b 1
+                             1          0
+     Healthcare_professional_internall_process'HP_b1 1
+                             1          0
+     Healthcare_provider_internal_process'Collected_data 1
+                             1          0
+     Healthcare_provider_internal_process'Data_to_be_shared 1
+                             1          0
+     Healthcare_provider_internal_process'GP_a1 1
+                             1          0
+     Healthcare_provider_internal_process'GP_b 1
+                             1          0
+     Healthcare_provider_internal_process'GP_b2 1
+                             1          0
+     Insurance_claim_data_validation'HP_validation_result 1
+                             1          0
+     Insurance_claim_data_validation'Hospital_Validation_result 1
+                             1          0
+     Insurance_claim_data_validation'Patient_validation_result 1
+                             1          0
+     Node_validation'Data_request 1
+                             1          0
+     Node_validation'Data_request 2
+                             1          0
+     Node_validation'Data_request 3
+                             1          0
+     Node_validation'Data_response 1
+                             1          0
+     Node_validation'Data_response 2
+                             1          0
+     Node_validation'Data_response 3
+                             1          0
+     Node_validation'data_for_validation 1
+                             1          0
+     Node_validation'data_for_validation 2
+                             1          0
+     Node_validation'data_for_validation 3
+                             1          0
+     Patient_internal_process'p12 1
+                             1          0
+     Patient_internal_process'p13 1
+                             1          0
+     Patient_internal_process'p14 1
+                             1          0
+
+  Best Upper Multi-set Bounds
+     Collect_data'BP_data_source 1
+                         1`(1,125.0)
+     Collect_data'BP_data_source 2
+                         1`(1,125.0)
+     Collect_data'BP_data_source 3
+                         1`(1,125.0)
+     Collect_data'BP_data_source 4
+                         1`(1,125.0)
+     Collect_data'BP_data_source 5
+                         1`(1,125.0)
+     Collect_data'BP_data_source 6
+                         1`(1,125.0)
+     Collect_data'Incorrect_data 1
+                         empty
+     Collect_data'Incorrect_data 2
+                         empty
+     Collect_data'Incorrect_data 3
+                         empty
+     Collect_data'Incorrect_data 4
+                         empty
+     Collect_data'Incorrect_data 5
+                         empty
+     Collect_data'Incorrect_data 6
+                         empty
+     Collect_data'Received_data 1
+                         1`(1,(1,125.0))
+     Collect_data'Received_data 2
+                         1`(1,(1,125.0))
+     Collect_data'Received_data 3
+                         1`(1,(1,125.0))
+     Collect_data'Received_data 4
+                         1`(1,(1,125.0))
+     Collect_data'Received_data 5
+                         1`(1,(1,125.0))
+     Collect_data'Received_data 6
+                         1`(1,(1,125.0))
+     Data_tampering'Data_tampered 1
+                         1`false
+     Data_tampering'Tampered_values 1
+                         1`(1,85.0)
+     Data_validation'Current_index 1
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Current_index 2
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Current_index 3
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Current_index_to_increment 1
+                         1`1++
+1`2++
+1`3
+     Data_validation'Current_index_to_increment 2
+                         1`1++
+1`2++
+1`3
+     Data_validation'Current_index_to_increment 3
+                         1`1++
+1`2++
+1`3
+     Data_validation'Current_node_index 1
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Current_node_index 2
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Current_node_index 3
+                         1`1++
+1`2++
+1`3++
+1`4
+     Data_validation'Data_for_consensus_result_calculation 1
+                         1`(1,(1,125.0))
+     Data_validation'Data_for_consensus_result_calculation 2
+                         1`(1,(1,125.0))
+     Data_validation'Data_for_consensus_result_calculation 3
+                         1`(1,(1,125.0))
+     Data_validation'Node_index 1
+                         1`1
+     Data_validation'Node_index 2
+                         1`1
+     Data_validation'Node_index 3
+                         1`1
+     Data_validation'Total_invalid 1
+                         1`(0,1)++
+1`(0,2)++
+1`(0,3)++
+1`(0,4)
+     Data_validation'Total_invalid 2
+                         1`(0,1)++
+1`(0,2)++
+1`(0,3)++
+1`(0,4)
+     Data_validation'Total_invalid 3
+                         1`(0,1)++
+1`(0,2)++
+1`(0,3)++
+1`(0,4)
+     Data_validation'Total_valid 1
+                         1`(0,1)++
+1`(1,2)++
+1`(2,3)++
+1`(3,4)
+     Data_validation'Total_valid 2
+                         1`(0,1)++
+1`(1,2)++
+1`(2,3)++
+1`(3,4)
+     Data_validation'Total_valid 3
+                         1`(0,1)++
+1`(1,2)++
+1`(2,3)++
+1`(3,4)
+     Data_validation'data_to_check 1
+                         1`(1,(1,125.0))
+     Data_validation'data_to_check 2
+                         1`(1,(1,125.0))
+     Data_validation'data_to_check 3
+                         1`(1,(1,125.0))
+     Data_validation'data_to_validate_by_node 1
+                         1`(1,1,(1,125.0))++
+1`(2,1,(1,125.0))++
+1`(3,1,(1,125.0))
+     Data_validation'data_to_validate_by_node 2
+                         1`(1,1,(1,125.0))++
+1`(2,1,(1,125.0))++
+1`(3,1,(1,125.0))
+     Data_validation'data_to_validate_by_node 3
+                         1`(1,1,(1,125.0))++
+1`(2,1,(1,125.0))++
+1`(3,1,(1,125.0))
+     Data_validation'invalid_nodes 1
+                         1`0
+     Data_validation'invalid_nodes 2
+                         1`0
+     Data_validation'invalid_nodes 3
+                         1`0
+     Data_validation'node_consensus_result 1
+                         1`(1,(1,125.0),true)
+     Data_validation'node_consensus_result 2
+                         1`(1,(1,125.0),true)
+     Data_validation'node_consensus_result 3
+                         1`(1,(1,125.0),true)
+     Data_validation'valid_nodes 1
+                         1`3
+     Data_validation'valid_nodes 2
+                         1`3
+     Data_validation'valid_nodes 3
+                         1`3
+     ExternalLayer'GP_end 1
+                         1`1
+     ExternalLayer'GP_out 1
+                         1`(1,((1,125.0),EHR))
+     ExternalLayer'GP_start 1
+                         1`1
+     ExternalLayer'HP_data 1
+                         1`(1,(1,125.0))
+     ExternalLayer'HP_end 1
+                         1`1
+     ExternalLayer'HP_out 1
+                         1`(1,((1,125.0),EHR))
+     ExternalLayer'HP_start 1
+                         1`1
+     ExternalLayer'Hospital_data 1
+                         1`(1,(1,125.0))
+     ExternalLayer'IP_a 1
+                         1`1
+     ExternalLayer'IP_b 1
+                         1`1
+     ExternalLayer'IP_c 1
+                         1`1
+     ExternalLayer'IP_d 1
+                         1`1
+     ExternalLayer'IP_e 1
+                         1`1
+     ExternalLayer'IP_f 1
+                         1`1
+     ExternalLayer'Invalid_data 1
+                         empty
+     ExternalLayer'P_end 1
+                         1`1
+     ExternalLayer'P_out 1
+                         1`(1,(1,125.0))
+     ExternalLayer'P_start 1
+                         1`1
+     ExternalLayer'Patient_data 1
+                         1`(1,(1,125.0))
+     ExternalLayer'Uniqueue_end 1
+                         1`(1,(1,125.0),true)
+     ExternalLayer'Valid_data 1
+                         1`(1,(1,125.0),true)
+     ExternalLayer'Validation_result 1
+                         1`(1,(1,125.0),true)
+     ExternalLayer'uniqueue_start 1
+                         1`1
+     Healthcare_professional_internall_process'Filtered_data 1
+                         1`(1,((1,125.0),EHR))
+     Healthcare_professional_internall_process'HP_b 1
+                         1`1
+     Healthcare_professional_internall_process'HP_b1 1
+                         1`(1,(1,125.0))
+     Healthcare_provider_internal_process'Collected_data 1
+                         1`(1,(1,125.0))
+     Healthcare_provider_internal_process'Data_to_be_shared 1
+                         1`(1,(1,125.0))
+     Healthcare_provider_internal_process'GP_a1 1
+                         1`1
+     Healthcare_provider_internal_process'GP_b 1
+                         1`(1,(1,125.0))
+     Healthcare_provider_internal_process'GP_b2 1
+                         1`(1,(1,125.0))
+     Insurance_claim_data_validation'HP_validation_result 1
+                         1`(1,(1,125.0),true)
+     Insurance_claim_data_validation'Hospital_Validation_result 1
+                         1`(1,(1,125.0),true)
+     Insurance_claim_data_validation'Patient_validation_result 1
+                         1`(1,(1,125.0),true)
+     Node_validation'Data_request 1
+                         1`1
+     Node_validation'Data_request 2
+                         1`1
+     Node_validation'Data_request 3
+                         1`1
+     Node_validation'Data_response 1
+                         1`(1,(1,125.0))
+     Node_validation'Data_response 2
+                         1`(1,(1,125.0))
+     Node_validation'Data_response 3
+                         1`(1,(1,125.0))
+     Node_validation'data_for_validation 1
+                         1`(1,125.0)
+     Node_validation'data_for_validation 2
+                         1`(1,125.0)
+     Node_validation'data_for_validation 3
+                         1`(1,125.0)
+     Patient_internal_process'p12 1
+                         1`1
+     Patient_internal_process'p13 1
+                         1`(1,(1,125.0))
+     Patient_internal_process'p14 1
+                         1`(1,(1,125.0))
+
+  Best Lower Multi-set Bounds
+     Collect_data'BP_data_source 1
+                         1`(1,125.0)
+     Collect_data'BP_data_source 2
+                         1`(1,125.0)
+     Collect_data'BP_data_source 3
+                         1`(1,125.0)
+     Collect_data'BP_data_source 4
+                         1`(1,125.0)
+     Collect_data'BP_data_source 5
+                         1`(1,125.0)
+     Collect_data'BP_data_source 6
+                         1`(1,125.0)
+     Collect_data'Incorrect_data 1
+                         empty
+     Collect_data'Incorrect_data 2
+                         empty
+     Collect_data'Incorrect_data 3
+                         empty
+     Collect_data'Incorrect_data 4
+                         empty
+     Collect_data'Incorrect_data 5
+                         empty
+     Collect_data'Incorrect_data 6
+                         empty
+     Collect_data'Received_data 1
+                         empty
+     Collect_data'Received_data 2
+                         empty
+     Collect_data'Received_data 3
+                         empty
+     Collect_data'Received_data 4
+                         empty
+     Collect_data'Received_data 5
+                         empty
+     Collect_data'Received_data 6
+                         empty
+     Data_tampering'Data_tampered 1
+                         1`false
+     Data_tampering'Tampered_values 1
+                         1`(1,85.0)
+     Data_validation'Current_index 1
+                         empty
+     Data_validation'Current_index 2
+                         empty
+     Data_validation'Current_index 3
+                         empty
+     Data_validation'Current_index_to_increment 1
+                         empty
+     Data_validation'Current_index_to_increment 2
+                         empty
+     Data_validation'Current_index_to_increment 3
+                         empty
+     Data_validation'Current_node_index 1
+                         empty
+     Data_validation'Current_node_index 2
+                         empty
+     Data_validation'Current_node_index 3
+                         empty
+     Data_validation'Data_for_consensus_result_calculation 1
+                         empty
+     Data_validation'Data_for_consensus_result_calculation 2
+                         empty
+     Data_validation'Data_for_consensus_result_calculation 3
+                         empty
+     Data_validation'Node_index 1
+                         empty
+     Data_validation'Node_index 2
+                         empty
+     Data_validation'Node_index 3
+                         empty
+     Data_validation'Total_invalid 1
+                         empty
+     Data_validation'Total_invalid 2
+                         empty
+     Data_validation'Total_invalid 3
+                         empty
+     Data_validation'Total_valid 1
+                         empty
+     Data_validation'Total_valid 2
+                         empty
+     Data_validation'Total_valid 3
+                         empty
+     Data_validation'data_to_check 1
+                         empty
+     Data_validation'data_to_check 2
+                         empty
+     Data_validation'data_to_check 3
+                         empty
+     Data_validation'data_to_validate_by_node 1
+                         empty
+     Data_validation'data_to_validate_by_node 2
+                         empty
+     Data_validation'data_to_validate_by_node 3
+                         empty
+     Data_validation'invalid_nodes 1
+                         empty
+     Data_validation'invalid_nodes 2
+                         empty
+     Data_validation'invalid_nodes 3
+                         empty
+     Data_validation'node_consensus_result 1
+                         empty
+     Data_validation'node_consensus_result 2
+                         empty
+     Data_validation'node_consensus_result 3
+                         empty
+     Data_validation'valid_nodes 1
+                         empty
+     Data_validation'valid_nodes 2
+                         empty
+     Data_validation'valid_nodes 3
+                         empty
+     ExternalLayer'GP_end 1
+                         empty
+     ExternalLayer'GP_out 1
+                         empty
+     ExternalLayer'GP_start 1
+                         empty
+     ExternalLayer'HP_data 1
+                         empty
+     ExternalLayer'HP_end 1
+                         empty
+     ExternalLayer'HP_out 1
+                         empty
+     ExternalLayer'HP_start 1
+                         empty
+     ExternalLayer'Hospital_data 1
+                         empty
+     ExternalLayer'IP_a 1
+                         empty
+     ExternalLayer'IP_b 1
+                         empty
+     ExternalLayer'IP_c 1
+                         empty
+     ExternalLayer'IP_d 1
+                         empty
+     ExternalLayer'IP_e 1
+                         empty
+     ExternalLayer'IP_f 1
+                         empty
+     ExternalLayer'Invalid_data 1
+                         empty
+     ExternalLayer'P_end 1
+                         empty
+     ExternalLayer'P_out 1
+                         empty
+     ExternalLayer'P_start 1
+                         empty
+     ExternalLayer'Patient_data 1
+                         empty
+     ExternalLayer'Uniqueue_end 1
+                         empty
+     ExternalLayer'Valid_data 1
+                         empty
+     ExternalLayer'Validation_result 1
+                         empty
+     ExternalLayer'uniqueue_start 1
+                         empty
+     Healthcare_professional_internall_process'Filtered_data 1
+                         empty
+     Healthcare_professional_internall_process'HP_b 1
+                         empty
+     Healthcare_professional_internall_process'HP_b1 1
+                         empty
+     Healthcare_provider_internal_process'Collected_data 1
+                         empty
+     Healthcare_provider_internal_process'Data_to_be_shared 1
+                         empty
+     Healthcare_provider_internal_process'GP_a1 1
+                         empty
+     Healthcare_provider_internal_process'GP_b 1
+                         empty
+     Healthcare_provider_internal_process'GP_b2 1
+                         empty
+     Insurance_claim_data_validation'HP_validation_result 1
+                         empty
+     Insurance_claim_data_validation'Hospital_Validation_result 1
+                         empty
+     Insurance_claim_data_validation'Patient_validation_result 1
+                         empty
+     Node_validation'Data_request 1
+                         empty
+     Node_validation'Data_request 2
+                         empty
+     Node_validation'Data_request 3
+                         empty
+     Node_validation'Data_response 1
+                         empty
+     Node_validation'Data_response 2
+                         empty
+     Node_validation'Data_response 3
+                         empty
+     Node_validation'data_for_validation 1
+                         empty
+     Node_validation'data_for_validation 2
+                         empty
+     Node_validation'data_for_validation 3
+                         empty
+     Patient_internal_process'p12 1
+                         empty
+     Patient_internal_process'p13 1
+                         empty
+     Patient_internal_process'p14 1
+                         empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     [30547]
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     [30547]
+
+  Dead Transition Instances
+     Collect_data'Request_data_again 1
+     Collect_data'Request_data_again 2
+     Collect_data'Request_data_again 3
+     Collect_data'Request_data_again 4
+     Collect_data'Request_data_again 5
+     Collect_data'Request_data_again 6
+     ExternalLayer'Reject_claim 1
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.
