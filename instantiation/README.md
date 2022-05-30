@@ -15,7 +15,7 @@ PREFIX ULRO_INST: <https://mmisw.org/ont/~mubashar/ULRO-instantiation#>
 ```
 
 ### System assets
-The following SPARQL query retrieves the system assets that support the business assets
+The following SPARQL query retrieves the system assets that support the business assets.
 
 ```sql
 SELECT DISTINCT ?System_asset ?Business_asset WHERE {
@@ -69,7 +69,7 @@ SELECT DISTINCT ?Threat ?Vulnerability ?System_asset WHERE {
 ```
 
 ### Countermeasure
-The following SPARQL query brings the list of countermeasure to mitigate the threats.
+The following SPARQL query brings the list of countermeasures to mitigate the threats.
 
 ```sql
 SELECT DISTINCT ?Countermeasure ?Vulnerability WHERE {
