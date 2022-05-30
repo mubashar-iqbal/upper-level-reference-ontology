@@ -66,6 +66,17 @@
     
 
 
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dublin core annotation property to determine if the threat is connected to traditional or blockchain-based applications.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Dublin_core"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dcterms:isPartOf</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is a dublin core metadata term.</rdfs:seeAlso>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
@@ -584,6 +595,7 @@
         </rdfs:subClassOf>
         <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Ichikawa2017"/>
         <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Li2018a"/>
+        <terms:isPartOf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TraditionalApplication</terms:isPartOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data tampering involves the malicious modification of data by an unauthorized user.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataTampering</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitigated</rdfs:seeAlso>
@@ -838,6 +850,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <dc:isReferencedBy rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Swathi2019"/>
+        <terms:isPartOf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BlockchainApplication</terms:isPartOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sybil attack is well-known in the context of P2P networks, where the attacker can forge or create numerous fake identities to gain a considerable influence on the network.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SybilAttack</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Appeared</rdfs:seeAlso>
