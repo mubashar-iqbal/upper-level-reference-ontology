@@ -590,6 +590,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurementDevice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#targets"/>
                 <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#DataOperation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -618,6 +624,12 @@
 
     <owl:Class rdf:about="https://mmisw.org/ont/~mubashar/ULRO-instantiation#ErrorProneDataValidation">
         <rdfs:subClassOf rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#Vulnerability"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
+                <owl:someValuesFrom rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#BloodPressureMeasurementDevice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://mmisw.org/ont/~mubashar/ULRO-instantiation#characteristicOf"/>
